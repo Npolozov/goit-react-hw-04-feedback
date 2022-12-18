@@ -8,12 +8,13 @@ import {
 } from 'react-icons/bs';
 
 export const Buttons = ({ options, handleButtonClick }) => {
+  console.log(options);
   return options.map(option => (
     <Button
       key={shortid.generate()}
       type="button"
       name={option}
-      onClick={handleButtonClick}
+      onClick={() => handleButtonClick(option)}
     >
       {renderIcon(option)}
       {option}

@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { Title, Conteiner } from './Feddback.styled';
 
 export const Feedback = ({ title, children }) => {
   return (
-    <>
-      <h2>{title}</h2>
+    <Conteiner>
+      <Title>{title}</Title>
       {children}
-    </>
+    </Conteiner>
   );
 };
 
